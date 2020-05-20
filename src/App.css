@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+body {
+	background-color: #fdcbf1;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	background-image: linear-gradient(
+		to top,
+		#fdcbf1 0%,
+		#fdcbf1 1%,
+		#e6dee9 100%
+	);
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(22, 21, 21);
+}
+.search-form {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.search-bar {
+	width: 50%;
+	border: none;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: rgba(128, 119, 119, 0.671);
+}
+.search-button {
+	border: none;
+	padding: 12px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #a8ff94;
+	color: rgb(22, 21, 21);
+}
+.search-button:hover {
+	background-color: #58b344;
+	color: #fff;
+}
+
+.all-reciepe {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+	justify-content: center;
+}
+.recipe-card {
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	min-height: 500px;
+	transition: 0.2s;
+	transform: scale(0.9);
+}
+.recipe-card:hover {
+	transform: scale(1);
+}
+.recipe-card h2 {
+	font-size: 20px;
+}
+.recipe-image {
+	margin-bottom: -5px;
+}
+.recipe-content {
+	background-color: #e2e3e8;
+	padding: 0 10px;
+}
+.recipe-content a {
+	text-decoration: none;
+	color: #58b344;
+}
+.recipe-content a:hover {
+	text-decoration: none;
+	color: #31851e;
+}
